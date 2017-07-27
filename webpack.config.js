@@ -8,7 +8,7 @@ module.exports = [
       filename: 'conspectio.min.js'
     },
     module: {
-      loaders: [ 
+      loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -16,15 +16,15 @@ module.exports = [
         query: {
 					presets: ['es2015']
 				}
-      }  
+      }
       ]
     },
     plugins: [
       new webpack.BannerPlugin('Copyright Conspectio'),
       new webpack.optimize.OccurenceOrderPlugin(),
-      new webpack.optimize.UglifyJsPlugin({
-        compress: { warnings: false },
-      }),
+      // new webpack.optimize.UglifyJsPlugin({
+      //   compress: { warnings: false },
+      // }),
     ]
-  }  
+  }
 ];

@@ -1759,6 +1759,7 @@ var edgeShim = {
               self.dispatchEvent(event);
               if (self.onaddstream !== null) {
                 window.setTimeout(function() {
+                  console.log('self', self);
                   self.onaddstream(event);
                 }, 0);
               }
