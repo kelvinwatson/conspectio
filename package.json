@@ -4,7 +4,7 @@
   "description": "Conspectio is a library developers can use to integrate scalable live streaming simulcasts without the need for additional servers. Conspectio is built on top of WebRTC and Socket.io.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon demo/server/server.js",
+    "start": "node demo/server/server.js",
     "build": "./node_modules/.bin/webpack -w",
     "test": "./node_modules/mocha/bin/mocha --timeout 20000 ./demo/test/test.js"
   },
