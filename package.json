@@ -28,6 +28,7 @@
     "alasql": "^0.3.3",
     "cold-brew": "^1.0.30",
     "express": "4.14.0",
+    "firebase": "^4.2.0",
     "path": "0.12.7",
     "socket.io": "1.5.0"
   },
